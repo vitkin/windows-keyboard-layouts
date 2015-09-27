@@ -26,6 +26,26 @@ Locations of those special keys are the same as on the French AZERTY keyboard.
 - `[Alt Gt]+[[], [E] = "ê"`
 - `[Shift]+[Alt Gt]+[[], [E] = "ë"`
 
+### de-sg-ex
+
+Add key to enter german ß letter `[Alt Gr]+[s]`. 
+
+Add keys for writing most other western european languages, including norwegian, swedian or spain. 
+
+#### Examples
+
+- `[Alt Gr]+[a] = "æ"`
+- `[Alt Gr]+[a] = "æ"`
+- `[Alt Gr]+[n] = "ñ"`
+- `[Alt Gr]+[°]` is a dead key, it generates
+   +`A` = Å
+   +`A` = å
+- `[Alt Gr]+[o]` is a dead key, it generates
+   +`e` = œ
+   +`E` = Œ
+   +`-` = ø
+   +`_` = Ø
+
 ## Notes
 
 Add the following to this `.git/config` or to your `~/.gitconfig`:
