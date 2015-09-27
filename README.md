@@ -38,13 +38,13 @@ Add keys for writing most other western european languages, including norwegian,
 - `[Alt Gr]+[a] = "æ"`
 - `[Alt Gr]+[n] = "ñ"`
 - `[Alt Gr]+[°]` is a dead key, it generates
-   +`A` = Å
-   +`A` = å
+-- +`A` = Å
+-- +`A` = å
 - `[Alt Gr]+[o]` is a dead key, it generates
-   +`e` = œ
-   +`E` = Œ
-   +`-` = ø
-   +`_` = Ø
+-- +`e` = œ
+-- +`E` = Œ
+-- +`-` = ø
+-- +`_` = Ø
 
 ## Notes
 
