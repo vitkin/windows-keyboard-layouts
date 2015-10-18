@@ -1,4 +1,4 @@
-KBD	fr-num	"French with inverted top number keys"
+KBD	KBDFRNUM	"French with inverted top number keys"
 
 COPYRIGHT	"GPL-3.0"
 
@@ -218,9 +218,11 @@ KEYNAME_DEAD
 DESCRIPTIONS
 
 0409	French with inverted top number keys
+040c	Français avec touches num. inversées
 
 LANGUAGENAMES
 
 0409	French (France)
+040c	Français (France)
 
 ENDKBD
