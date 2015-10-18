@@ -219,9 +219,11 @@ KEYNAME_DEAD
 DESCRIPTIONS
 
 0409	US with French AZERTY special keys
+040c	US avec touches AZERTY français
 
 LANGUAGENAMES
 
 0409	English (United States)
+040c	Anglais (Etats-Unis)
 
 ENDKBD
