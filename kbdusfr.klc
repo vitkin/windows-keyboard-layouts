@@ -1,4 +1,4 @@
-KBD	KBDUSFR	"US with French AZERTY special keys"
+KBD	kbdusfr	"US avec touches AZERTY français"
 
 COPYRIGHT	"GPL-3.0"
 
@@ -223,7 +223,7 @@ DESCRIPTIONS
 
 LANGUAGENAMES
 
-0409	English (United States)
-040c	Anglais (Etats-Unis)
+0409	French (France)
+040c	Français (France)
 
 ENDKBD

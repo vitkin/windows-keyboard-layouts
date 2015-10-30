@@ -1,4 +1,4 @@
-KBD	DE-SG-X3	"Deutsch (Schweiz) - Extended2"
+KBD	kbddechx	"Deutsch (Schweiz) - Extended2"
 
 COPYRIGHT	"CC-BY-SA"
 
@@ -255,10 +255,12 @@ KEYNAME_DEAD
 
 DESCRIPTIONS
 
-0409	Deutsch (Schweiz) - Extended
+0409	German (Switzerland) - Extended
+0807	Deutsch (Schweiz) - Extended
 
 LANGUAGENAMES
 
 0409	German (Switzerland)
+0807	Deutsch (Schweiz)
 
 ENDKBD

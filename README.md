@@ -4,47 +4,71 @@
 
 Set of custom keyboard layouts for Windows.
 
-To build the installers for those layouts use the [Microsoft Keyboard Layout Creator][2]
-
 ## Layouts
 
-### fr-num
+### kbdfrinu - French with inverted top number keys
 
-Invert numerical keys with special characters at the top of the keyboard so that there is no need to press the `[Shift]` key.
+Invert numerical keys with special characters at the top of the keyboard so that
+there is no need to press the <kbd>Shift</kbd> key.
 
-### en-fr
+### kbdusfr - US with French AZERTY special keys
 
 Add extra keys taken from the French AZERTY keyboards.
-Most of those keys can be obtained thanks to the `[Alt Gr]` or `[Ctrl]+[Alt]` combination.
+
+Most of those keys can be obtained thanks to the <kbd>Alt Gr</kbd> or
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> combination.
+
 Locations of those special keys are the same as on the French AZERTY keyboard.
 
 #### Examples
 
-- `[Alt Gr]+[2] = "é"`
-- `[Alt Gr]+[-] = "à"`
-- `[Alt Gr]+[7] = "è"`
-- `[Alt Gt]+[[], [E] = "ê"`
-- `[Shift]+[Alt Gt]+[[], [E] = "ë"`
+- <kbd>Alt Gr</kbd> + <kbd>2</kbd> = é
+- <kbd>Alt Gr</kbd> + <kbd>0</kbd> = à
+- <kbd>Alt Gr</kbd> + <kbd>7</kbd> = è
+- <kbd>Alt Gt</kbd> + <kbd>[</kbd>, <kbd>E</kbd> = ê
+- <kbd>Shift</kbd> + <kbd>Alt Gt</kbd> + <kbd>[</kbd>, <kbd>E</kbd> = ë
 
-### de-sg-ex
+### kbddechext - German (Switzerland) - Extended
 
-Add key to enter german ß letter `[Alt Gr]+[s]`. 
+Add key to enter German ß letter <kbd>Alt Gr</kbd> + <kbd>S</kbd>. 
 
-Add keys for writing most other western european languages, including norwegian, swedian or spain. 
+Add keys for writing most other western European languages including Norwegian,
+Swedish and Spanish. 
 
 #### Examples
 
-- `[Alt Gr]+[a] = "æ"`
-- `[Alt Gr]+[a] = "æ"`
-- `[Alt Gr]+[n] = "ñ"`
-- `[Alt Gr]+[°]` is a dead key, it generates with `A` = Å, with `A` = å
-- `[Alt Gr]+[o]` is a dead key, it generates with `e` = œ, with `E` = Œ, with `-` = ø, with `_` = Ø
+- <kbd>Alt Gr</kbd> + <kbd>A</kbd> = æ
+- <kbd>Alt Gr</kbd> + <kbd>N</kbd> = ñ
+- <kbd>Alt Gr</kbd> + <kbd>°</kbd> is a dead key, it generates:
+    * with <kbd>A</kbd> = å
+    * with <kbd>Shift</kbd> + <kbd>A</kbd> = Å
+- <kbd>Alt Gr</kbd> + <kbd>o</kbd> is a dead key, it generates:
+    * with <kbd>E</kbd> = œ
+    * with <kbd>Shift</kbd> + <kbd>E</kbd> = Œ
+    * with <kbd>-</kbd> = ø
+    * with <kbd>_</kbd> = Ø
 
-## Notes
+## Building keyboard layout installers
 
-Add the following to this `.git/config` or to your `~/.gitconfig`:
+To build the installers for those layouts use the [Microsoft Keyboard Layout Creator][2].
 
-```
+To be able to build the installer you may need to uninstall an existing layout
+that has the same name (e.g. Previous version of the keyboard layout).
+
+If that layout is actually your default one then you must select another layout
+as the default to be able to uninstall that layout. 
+
+## Cloning the Git repository
+
+The [Microsoft Keyboard Layout Creator][2] generates UTF-16LE files.
+
+Therefore to be able to check-in those files as text files into the Git repository,
+they need to be converted to UTF-8.
+
+To convert the UTF-16LE files, add the following to your `~/.gitconfig` or
+to the cloned repository `.git/config`:
+
+```ini
 [filter "winutf16"]
 	clean = iconv -f utf-16 -t utf-8
 	smudge = iconv -f utf-8 -t utf-16
