@@ -25,8 +25,20 @@ Locations of those special keys are the same as on the French AZERTY keyboard.
 - <kbd>Alt Gr</kbd> + <kbd>2</kbd> = é
 - <kbd>Alt Gr</kbd> + <kbd>0</kbd> = à
 - <kbd>Alt Gr</kbd> + <kbd>7</kbd> = è
-- <kbd>Alt Gt</kbd> + <kbd>[</kbd>, <kbd>E</kbd> = ê
-- <kbd>Shift</kbd> + <kbd>Alt Gt</kbd> + <kbd>[</kbd>, <kbd>E</kbd> = ë
+- <kbd>Alt Gr</kbd> + <kbd>[</kbd>, <kbd>E</kbd> = ê
+- <kbd>Shift</kbd> + <kbd>Alt Gr</kbd> + <kbd>[</kbd>, <kbd>E</kbd> = ë
+
+### kbdusiag - United States-International (Alt Gr dead keys)
+
+For typing quotation marks faster while typing accents (`acute`, `umlaut`, etc.) slower.
+
+#### Examples
+| Before = US International | After = Alt Gr dead keys | Result |
+|---------------------------|------------------------------------|--------|
+| <kbd>'</kbd>, <kbd>Space</kbd> | <kbd>'</kbd>                  | '      |
+| <kbd>Shift</kbd> + <kbd>'</kbd>, <kbd>Space</kbd> | <kbd>Shift</kbd> + <kbd>'</kbd> | " |
+| <kbd>'</kbd>, <kbd>E</kbd> | <kbd>Alt Gr</kbd> + <kbd>'</kbd>, <kbd>E</kbd> | é |
+| <kbd>Shift</kbd> + <kbd>6</kbd>, <kbd>A</kbd> | <kbd>Alt Gr</kbd> + <kbd>Shift</kbd> + <kbd>6</kbd>, <kbd>A</kbd> | â |
 
 ### kbddechext - German (Switzerland) - Extended
 
@@ -70,8 +82,8 @@ to the cloned repository `.git/config`:
 
 ```ini
 [filter "winutf16"]
-	clean = iconv -f utf-16 -t utf-8
-	smudge = iconv -f utf-8 -t utf-16
+	clean = iconv -f UTF-16LE -t UTF-8
+	smudge = iconv -f UTF-8 -t UTF-16LE
 	required
 ```
 
